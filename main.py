@@ -1,5 +1,6 @@
 import json
-from utils import contarPares
+from src.utils import contarPares
+from src.utils import comparoLista
 
 
 x = 10
@@ -57,19 +58,6 @@ print(3 in lista_pares)
 
 
 
-
-def comparoLista(a, b):
-
-    sizeA = len(a)
-    sizeB = len (b)
-    comparasion = 0
-
-    if sizeA < sizeB:
-        comparasion = -1
-    elif sizeA > sizeB:
-        comparasion = 1
-
-    return comparasion
 
 print(comparoLista(lista_pares, lista_impares))
 print(comparoLista(lista_impares, lista_pares))

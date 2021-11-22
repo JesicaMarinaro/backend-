@@ -6,3 +6,16 @@ def contarPares(n):
             contador.append(i)
 
     return contador
+
+def comparoLista(a, b):
+
+    sizeA = len(a)
+    sizeB = len (b)
+    comparasion = 0
+
+    if sizeA < sizeB:
+        comparasion = -1
+    elif sizeA > sizeB:
+        comparasion = 1
+
+    return comparasion
